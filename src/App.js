@@ -1,9 +1,21 @@
 import React, { Component } from "react";
+import Navigation from "./components/Navigation";
+import ParticlesBg from "particles-bg";
+import Logo from "./components/Logo";
 import "./App.css";
 
 class App extends Component {
   render() {
-    return <div className="App"></div>;
+    return (
+      <div className="App">
+        <ParticlesBg type="circle" bg={true} />
+        <Navigation />
+        <Logo />
+        {/* <Log />
+      <ImageLinkForm />
+      <FaceRecognition /> */}
+      </div>
+    );
   }
 }
 
