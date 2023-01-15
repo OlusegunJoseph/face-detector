@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/Navigation/Navigation";
 import ParticlesBg from "particles-bg";
-import Logo from "./components/Logo";
+import Logo from "./components/Logo/Logo";
+import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
+import Rank from "./components/Rank/Rank";
 import "./App.css";
 
 class App extends Component {
@@ -11,9 +13,10 @@ class App extends Component {
         <ParticlesBg type="circle" bg={true} />
         <Navigation />
         <Logo />
-        {/* <Log />
-      <ImageLinkForm />
-      <FaceRecognition /> */}
+        <Rank />
+        <ImageLinkForm />
+
+        {/* <FaceRecognition /> */}
       </div>
     );
   }
